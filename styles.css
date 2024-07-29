@@ -6,8 +6,7 @@
 
 body {
     background: #f8f8f8;
-    font-family: 'arial';
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
  header {
@@ -16,4 +15,32 @@ body {
     align-items: center;
     justify-content: center;
     padding: 16px 8px;
+}
+
+section form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.custom-button {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #00AB99;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.custom-button:hover {
+    background-color: #009280;
+}
+
+/* Esconde o input de arquivo padrão */
+#cameraInput {
+    display: none;
 }
