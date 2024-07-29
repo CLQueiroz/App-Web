@@ -57,13 +57,13 @@ section form {
 
     /* Estilização geral para inputs e selects */
         .form-group {
-            margin: 10px 0;
+            margin: 4px 0;
             width: 100%;
         }
 
         .form-label {
             display: block;
-            font-size: 16px;
+            font-size: 12px;
             margin-bottom: 5px;
             color: #333;
         }
@@ -108,5 +108,5 @@ section form {
             color: #007BFF;
         }
 #form {
-    padding: 0 10px;
+    padding: 0 16px;
 }        
