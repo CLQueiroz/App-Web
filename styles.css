@@ -6,5 +6,14 @@
 
 body {
     background: #f8f8f8;
-    font-family: 'arial'
+    font-family: 'arial';
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 8px;
 }
