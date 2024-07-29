@@ -27,6 +27,31 @@
                 <i class="fas fa-camera"></i>Nova Entrega
             </label>
         </form>
+        <form id="form">
+            <div class="form-group">
+                <label for="tipoDocumento" class="form-label">Tipo de Documento</label>
+                <div class="select-container">
+                    <select id="tipoDocumento" class="form-select" disabled>
+                        <option value="">Selecione o tipo de documento</option>
+                        <option value="cupomFiscal">Cupom Fiscal SAT</option>
+                        <option value="notaFiscal" selected>Nota Fiscal</option>
+                        <option value="notaFiscal">CTe</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="empresa" class="form-label">Empresa</label>
+                <div class="select-container">
+                    <select id="empresa" class="form-select" disabled>
+                        <option value="">Selecione a empresa</option>
+                        <option value="empresaA" selected>21337598000189 - Rec Transportes</option>
+                        <option value="empresaB">Empresa B</option>
+                        <option value="empresaC">Empresa C</option>
+                    </select>
+                </div>
+            </div>
+        </form>
     </section>
     <script>
         $(document).ready(function () {
