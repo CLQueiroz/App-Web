@@ -31,6 +31,7 @@ section form {
     justify-content: center;
     width: 100%;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 .custom-button {
