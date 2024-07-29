@@ -62,6 +62,94 @@
                     </select>
                 </div>
             </div>
+            <!-- Destinatário -->
+            <div class="select-container collapsible">
+                <option style="color: #9a9a9a">Destinatário</option>
+            </div>
+            <!-- <button type="button" class="collapsible">Destinatário</button> -->
+            <div class="content">
+                <div class="form-group">
+                    <label for="destinatarioNome" class="form-label">Nome</label>
+                    <input type="text" id="destinatarioNome" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="destinatarioEmail" class="form-label">E-mail</label>
+                    <input type="email" id="destinatarioEmail" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="destinatarioCep" class="form-label">CEP</label>
+                    <input type="text" id="destinatarioCep" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="destinatarioEndereco" class="form-label">Endereço</label>
+                    <input type="text" id="destinatarioEndereco" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="destinatarioBairro" class="form-label">Bairro</label>
+                    <input type="text" id="destinatarioBairro" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="destinatarioComplemento" class="form-label">Complemento</label>
+                    <input type="text" id="destinatarioComplemento" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="destinatarioCidade" class="form-label">Cidade</label>
+                    <input type="text" id="destinatarioCidade" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="destinatarioUf" class="form-label">UF</label>
+                    <input type="text" id="destinatarioUf" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="destinatarioTelefone" class="form-label">Telefone</label>
+                    <input type="text" id="destinatarioTelefone" class="form-input">
+                </div>
+            </div>
+
+            <!-- Remetente -->
+            <!-- <button type="button" class="collapsible">Remetente</button> -->
+            <div class="select-container collapsible">
+                <option style="color: #9a9a9a">Remetente</option>
+            </div>
+            <div class="content">
+                <div class="form-group">
+                    <label for="remetenteNome" class="form-label">Nome</label>
+                    <input type="text" id="remetenteNome" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="remetenteEmail" class="form-label">E-mail</label>
+                    <input type="email" id="remetenteEmail" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="remetenteCep" class="form-label">CEP</label>
+                    <input type="text" id="remetenteCep" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="remetenteEndereco" class="form-label">Endereço</label>
+                    <input type="text" id="remetenteEndereco" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="remetenteBairro" class="form-label">Bairro</label>
+                    <input type="text" id="remetenteBairro" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="remetenteComplemento" class="form-label">Complemento</label>
+                    <input type="text" id="remetenteComplemento" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="remetenteCidade" class="form-label">Cidade</label>
+                    <input type="text" id="remetenteCidade" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="remetenteUf" class="form-label">UF</label>
+                    <input type="text" id="remetenteUf" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="remetenteTelefone" class="form-label">Telefone</label>
+                    <input type="text" id="remetenteTelefone" class="form-input">
+                </div>
+            </div>
+            <input class="custom-button" type="submit" value="Criar Entrega" style="width: 100%; margin-top: 8px;">
         </form>
     </section>
     <script>
@@ -73,6 +161,10 @@
                     console.log('Imagem capturada:', file);
                     alert('Imagem válida')
                 }
+            });
+            $(".collapsible").click(function () {
+                $(this).toggleClass("active");
+                $(this).next(".content").slideToggle();
             });
         });
     </script>
