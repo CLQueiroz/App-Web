@@ -24,11 +24,12 @@
             </div>
             <input type="file" accept="image/*" capture="environment" id="cameraInput">
             <label for="cameraInput" class="custom-button">
-                <i class="fas fa-camera"></i>Nova Entrega
+                <i class="fas fa-camera"></i>Escanear documento
             </label>
         </form>
         <form id="form">
             <div class="form-group">
+                <div class="info-text">Confira se os dados a baixo estão corretos</div>
                 <label for="tipoDocumento" class="form-label">Motorista</label>
                 <div class="select-container">
                     <select id="tipoDocumento" class="form-select" disabled>
@@ -149,7 +150,8 @@
                     <input type="text" id="remetenteTelefone" class="form-input">
                 </div>
             </div>
-            <input class="custom-button" type="submit" value="Criar Entrega" style="width: 100%; margin-top: 8px;">
+            <input class="custom-button" type="submit" value="Criar Entrega"
+                style="width: 100%; margin-top: 8px; justify-content: center;">
         </form>
     </section>
     <script>
