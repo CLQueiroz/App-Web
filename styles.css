@@ -157,3 +157,13 @@ section form {
             border: none;
             outline: 0;
         }
+.row-group {
+    display: flex;
+    gap: 12px;
+}
+.w-50 {
+        width: 50%;
+    }
+.w-100 {
+    width: 100%;
+}
