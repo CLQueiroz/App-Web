@@ -150,12 +150,13 @@ section form {
 
         .form-input {
             width: 100%;
-            padding: 8px;
+            padding: 8px 2px;
             font-size: 14px;
             border: 1px solid #ccc;
             border-radius: 5px;
             border: none;
             outline: 0;
+            color: #9a9a9a;
         }
 .row-group {
     display: flex;
