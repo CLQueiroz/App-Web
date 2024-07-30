@@ -29,7 +29,6 @@
         </form>
         <form id="form">
             <div class="form-group">
-                <div class="info-text">Confira se os dados a baixo estão corretos</div>
                 <label for="tipoDocumento" class="form-label">Motorista</label>
                 <div class="select-container">
                     <select id="tipoDocumento" class="form-select" disabled>
@@ -41,18 +40,6 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="tipoDocumento" class="form-label">Tipo de documento</label>
-                <div class="select-container">
-                    <select id="tipoDocumento" class="form-select" disabled>
-                        <option value="">Selecione o tipo de documento</option>
-                        <option value="cupomFiscal">Cupom Fiscal SAT</option>
-                        <option value="notaFiscal" selected>Nota Fiscal</option>
-                        <option value="notaFiscal">CTe</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="form-group">
                 <label for="empresa" class="form-label">Empresa</label>
                 <div class="select-container">
                     <select id="empresa" class="form-select" disabled>
@@ -63,104 +50,117 @@
                     </select>
                 </div>
             </div>
-            <!-- <div class="w-100">
-                <div class="form-label" style="align-items: left;">Dados da Entrega</div>
-            </div> -->
-            <!-- Destinatário -->
-            <div class="select-container collapsible">
-                <div style="color: #727272; font-weight: bold;">Destinatário</div>
-            </div>
-            <!-- <button type="button" class="collapsible">Destinatário</button> -->
-            <div class="content">
+            <div class="data-order w-100" style="display: none;">
+                <div class="info-text">Confira se os dados a baixo estão corretos</div>
                 <div class="form-group">
-                    <label for="destinatarioNome" class="form-label">Nome</label>
-                    <input type="text" id="destinatarioNome" class="form-input" disabled value="Caique Queiroz">
-                </div>
-                <div class="form-group">
-                    <label for="destinatarioEmail" class="form-label">E-mail</label>
-                    <input type="email" id="destinatarioEmail" class="form-input" disabled
-                        value="caique.onisto@activecorp.com.br">
-                </div>
-                <div class="form-group">
-                    <label for="destinatarioCep" class="form-label">CEP</label>
-                    <input type="text" id="destinatarioCep" class="form-input" disabled value="07043-041">
-                </div>
-                <div class="form-group">
-                    <label for="destinatarioEndereco" class="form-label">Endereço</label>
-                    <input type="text" id="destinatarioEndereco" class="form-input" disabled value="Rua dos bobo, 00">
-                </div>
-                <div class="row-group">
-                    <div class="form-group">
-                        <label for="destinatarioBairro" class="form-label">Bairro</label>
-                        <input type="text" id="destinatarioBairro" class="form-input" disabled value="Vila Logo ali">
-                    </div>
-                    <div class="form-group">
-                        <label for="destinatarioComplemento" class="form-label">Complemento</label>
-                        <input type="text" id="destinatarioComplemento" class="form-input" disabled value="SN">
+                    <label for="tipoDocumento" class="form-label">Tipo de documento</label>
+                    <div class="select-container">
+                        <select id="tipoDocumento" class="form-select" disabled>
+                            <option value="">Selecione o tipo de documento</option>
+                            <option value="cupomFiscal">Cupom Fiscal SAT</option>
+                            <option value="notaFiscal" selected>Nota Fiscal</option>
+                            <option value="notaFiscal">CTe</option>
+                        </select>
                     </div>
                 </div>
-                <div class="row-group">
+                <!-- Destinatário -->
+                <div class="select-container collapsible">
+                    <div style="color: #727272; font-weight: bold;">Destinatário</div>
+                </div>
+                <!-- <button type="button" class="collapsible">Destinatário</button> -->
+                <div class="content">
                     <div class="form-group">
-                        <label for="destinatarioCidade" class="form-label">Cidade</label>
-                        <input type="text" id="destinatarioCidade" class="form-input" disabled value="Guarulhos">
+                        <label for="destinatarioNome" class="form-label">Nome</label>
+                        <input type="text" id="destinatarioNome" class="form-input" disabled value="Caique Queiroz">
                     </div>
                     <div class="form-group">
-                        <label for="destinatarioUf" class="form-label">UF</label>
-                        <input type="text" id="destinatarioUf" class="form-input" disabled value="SP">
+                        <label for="destinatarioEmail" class="form-label">E-mail</label>
+                        <input type="email" id="destinatarioEmail" class="form-input" disabled
+                            value="caique.onisto@activecorp.com.br">
+                    </div>
+                    <div class="form-group">
+                        <label for="destinatarioCep" class="form-label">CEP</label>
+                        <input type="text" id="destinatarioCep" class="form-input" disabled value="07043-041">
+                    </div>
+                    <div class="form-group">
+                        <label for="destinatarioEndereco" class="form-label">Endereço</label>
+                        <input type="text" id="destinatarioEndereco" class="form-input" disabled
+                            value="Rua dos bobo, 00">
+                    </div>
+                    <div class="row-group">
+                        <div class="form-group">
+                            <label for="destinatarioBairro" class="form-label">Bairro</label>
+                            <input type="text" id="destinatarioBairro" class="form-input" disabled
+                                value="Vila Logo ali">
+                        </div>
+                        <div class="form-group">
+                            <label for="destinatarioComplemento" class="form-label">Complemento</label>
+                            <input type="text" id="destinatarioComplemento" class="form-input" disabled value="SN">
+                        </div>
+                    </div>
+                    <div class="row-group">
+                        <div class="form-group">
+                            <label for="destinatarioCidade" class="form-label">Cidade</label>
+                            <input type="text" id="destinatarioCidade" class="form-input" disabled value="Guarulhos">
+                        </div>
+                        <div class="form-group">
+                            <label for="destinatarioUf" class="form-label">UF</label>
+                            <input type="text" id="destinatarioUf" class="form-input" disabled value="SP">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="destinatarioTelefone" class="form-label">Telefone</label>
+                        <input type="text" id="destinatarioTelefone" class="form-input" disabled value="(11)91111-1234">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="destinatarioTelefone" class="form-label">Telefone</label>
-                    <input type="text" id="destinatarioTelefone" class="form-input" disabled value="(11)91111-1234">
-                </div>
-            </div>
 
-            <!-- Remetente -->
-            <!-- <button type="button" class="collapsible">Remetente</button> -->
-            <div class="select-container collapsible">
-                <div style="color: #727272; font-weight: bold;">Remetente</div>
-            </div>
-            <div class="content">
-                <div class="form-group">
-                    <label for="remetenteNome" class="form-label">Nome</label>
-                    <input type="text" id="remetenteNome" class="form-input" disabled value="Caique Queiroz">
+                <!-- Remetente -->
+                <!-- <button type="button" class="collapsible">Remetente</button> -->
+                <div class="select-container collapsible">
+                    <div style="color: #727272; font-weight: bold;">Remetente</div>
                 </div>
-                <div class="form-group">
-                    <label for="remetenteEmail" class="form-label">E-mail</label>
-                    <input type="email" id="remetenteEmail" class="form-input" disabled
-                        value="caique.onisto@activecorp.com.br">
-                </div>
-                <div class="form-group">
-                    <label for="remetenteCep" class="form-label">CEP</label>
-                    <input type="text" id="remetenteCep" class="form-input" disabled value="07043-041">
-                </div>
-                <div class="form-group">
-                    <label for="remetenteEndereco" class="form-label">Endereço</label>
-                    <input type="text" id="remetenteEndereco" class="form-input" disabled value="Rua dos bobo, 00">
-                </div>
-                <div class="row-group">
+                <div class="content">
                     <div class="form-group">
-                        <label for="remetenteBairro" class="form-label">Bairro</label>
-                        <input type="text" id="remetenteBairro" class="form-input" disabled value="Vila Logo ali">
+                        <label for="remetenteNome" class="form-label">Nome</label>
+                        <input type="text" id="remetenteNome" class="form-input" disabled value="Caique Queiroz">
                     </div>
                     <div class="form-group">
-                        <label for="remetenteComplemento" class="form-label">Complemento</label>
-                        <input type="text" id="remetenteComplemento" class="form-input" disabled value="SN">
-                    </div>
-                </div>
-                <div class="row-group">
-                    <div class="form-group">
-                        <label for="remetenteCidade" class="form-label">Cidade</label>
-                        <input type="text" id="remetenteCidade" class="form-input" disabled value="Guarulhos">
+                        <label for="remetenteEmail" class="form-label">E-mail</label>
+                        <input type="email" id="remetenteEmail" class="form-input" disabled
+                            value="caique.onisto@activecorp.com.br">
                     </div>
                     <div class="form-group">
-                        <label for="remetenteUf" class="form-label">UF</label>
-                        <input type="text" id="remetenteUf" class="form-input" disabled value="SP">
+                        <label for="remetenteCep" class="form-label">CEP</label>
+                        <input type="text" id="remetenteCep" class="form-input" disabled value="07043-041">
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="remetenteTelefone" class="form-label">Telefone</label>
-                    <input type="text" id="remetenteTelefone" class="form-input" disabled value="(11)91111-1234">
+                    <div class="form-group">
+                        <label for="remetenteEndereco" class="form-label">Endereço</label>
+                        <input type="text" id="remetenteEndereco" class="form-input" disabled value="Rua dos bobo, 00">
+                    </div>
+                    <div class="row-group">
+                        <div class="form-group">
+                            <label for="remetenteBairro" class="form-label">Bairro</label>
+                            <input type="text" id="remetenteBairro" class="form-input" disabled value="Vila Logo ali">
+                        </div>
+                        <div class="form-group">
+                            <label for="remetenteComplemento" class="form-label">Complemento</label>
+                            <input type="text" id="remetenteComplemento" class="form-input" disabled value="SN">
+                        </div>
+                    </div>
+                    <div class="row-group">
+                        <div class="form-group">
+                            <label for="remetenteCidade" class="form-label">Cidade</label>
+                            <input type="text" id="remetenteCidade" class="form-input" disabled value="Guarulhos">
+                        </div>
+                        <div class="form-group">
+                            <label for="remetenteUf" class="form-label">UF</label>
+                            <input type="text" id="remetenteUf" class="form-input" disabled value="SP">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="remetenteTelefone" class="form-label">Telefone</label>
+                        <input type="text" id="remetenteTelefone" class="form-input" disabled value="(11)91111-1234">
+                    </div>
                 </div>
             </div>
             <input class="custom-button" type="submit" value="Criar Entrega"
@@ -174,7 +174,8 @@
                 if (file) {
                     // Aqui você pode fazer algo com a imagem capturada, como enviá-la para o servidor
                     console.log('Imagem capturada:', file);
-                    alert('Imagem válida')
+                    alert('Documento adicionado com sucesso, confirme os dados e confirme!')
+                    $(".data-order").show();
                 }
             });
             $(".collapsible").click(function () {
