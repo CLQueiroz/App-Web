@@ -180,6 +180,22 @@
                 $(this).toggleClass("active");
                 $(this).next(".content").slideToggle();
             });
+            $('#form').submit(function (event) {
+                event.preventDefault(); // Evita o envio padrão do formulário
+
+                var formData = {};
+                $('#form').find('input, select').each(function () {
+                    var input = $(this);
+                    var id = input.attr('id');
+                    if (id) {
+                        formData[id] = input.val();
+                    }
+                });
+
+                console.log(JSON.stringify(formData)); // Exibe o JSON no console
+
+                // Aqui você pode enviar o JSON para o servidor, por exemplo, usando $.post ou $.ajax
+            });
         });
     </script>
 </body>
