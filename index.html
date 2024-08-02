@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    <div id="loaderOverlay">
+        <div class="spinner"></div>
+        <div class="loaderText">Sua imagem está sendo processada.</div>
+    </div>
     <header>
         <img src="https://app.tudoentregue.com.br/Structure/Images/logo_TudoEntregue.png?new" alt="">
     </header>
@@ -183,6 +187,8 @@
             $('#form').submit(function (event) {
                 event.preventDefault(); // Evita o envio padrão do formulário
 
+                $("#loaderOverlay").slideToggle();
+
                 var formData = {};
                 $('#form').find('input, select').each(function () {
                     var input = $(this);
@@ -192,8 +198,21 @@
                     }
                 });
 
-                console.log(JSON.stringify(formData)); // Exibe o JSON no console
-
+                $.ajax({
+                    url: 'server.php',
+                    type: 'POST',
+                    data: JSON.stringify(formData),
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (response) {
+                        console.log('Resposta do servidor:', response);
+                        setTimeout(function () {
+                            $("#loaderOverlay").fadeToggle();
+                        }, 3000)
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Erro na chamada AJAX:', error);
+                    }
+                });
                 // Aqui você pode enviar o JSON para o servidor, por exemplo, usando $.post ou $.ajax
             });
         });
