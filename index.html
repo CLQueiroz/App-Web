@@ -198,21 +198,21 @@
                     }
                 });
 
-                $.ajax({
-                    url: 'server.php',
-                    type: 'POST',
-                    data: JSON.stringify(formData),
-                    contentType: 'application/json; charset=utf-8',
-                    success: function (response) {
-                        console.log('Resposta do servidor:', response);
-                        setTimeout(function () {
-                            $("#loaderOverlay").fadeToggle();
-                        }, 3000)
-                    },
-                    error: function (xhr, status, error) {
-                        console.error('Erro na chamada AJAX:', error);
-                    }
-                });
+                setTimeout(function () {
+                    $("#loaderOverlay").fadeToggle();
+                }, 5000)
+                // $.ajax({
+                //     url: 'server.php',
+                //     type: 'POST',
+                //     data: JSON.stringify(formData),
+                //     contentType: 'application/json; charset=utf-8',
+                //     success: function (response) {
+                //         console.log('Resposta do servidor:', response);
+                //     },
+                //     error: function (xhr, status, error) {
+                //         console.error('Erro na chamada AJAX:', error);
+                //     }
+                // });
                 // Aqui você pode enviar o JSON para o servidor, por exemplo, usando $.post ou $.ajax
             });
         });
